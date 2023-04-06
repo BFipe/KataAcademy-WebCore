@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__start {
+    display: flex;
+    justify-content: space-evenly;
+}
+.start {
+    display: flex;
+}
+.start__button {
+}
+.start__logo {
+}
+
+.header__contacts {
+}
+
+.contacts {
+    display: flex;
+    
+}
+
+.contacts__button {
+}
+
+.header__repair-check {
+}
+
+.repair-check {
+    display: flex;
+}
+
+.repair-check__button {
+}
+
+@media screen and (max-width: 1120px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 320px) {
+    .contacts{
+        display: none;
+    }
+}
