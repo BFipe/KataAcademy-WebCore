@@ -1,31 +1,18 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #F8F8F8;
 }
 
 .container {
     
 }
 
-.divider{
-    width: 2px;
-    height: 32px;
-    background-color: #EAEAEA;
-    border-radius: 1px;
-}
-
-.divider--medium{
-    
-}
-
-.divider--small{
-
-}
-
 .header {
     display: none;
     width: auto;
     align-items: center;
+    background-color: #FFFFFF;
 }
 
 .header__left {
@@ -35,10 +22,14 @@ body{
     align-items: center;
 }
 
-
 .header__logo{
     width: 100px;
     height: 50px;
+}
+
+button:focus{
+    border-radius: 50%;
+    outline: 2px solid #818181;
 }
 
 .button img{
@@ -46,8 +37,21 @@ body{
     height: 40px;
 }
 
-.header a{
+.button{
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: #FFFFFF00;
     text-decoration: none;
+    margin: auto 0;
+}
+
+.button svg:hover{
+    cursor: pointer;
+}
+
+.button svg:hover rect{
+    fill: #a83b5b;
 }
 
 .header__burger {
@@ -92,7 +96,8 @@ body{
 
     .header__right::after{
         content: '';
-        border: 1px solid #EAEAEA; 
+        background-color: #EAEAEA;
+        width: 2px;
         border-radius: 1px;
         height: 32px;
         position: fixed;
@@ -101,7 +106,8 @@ body{
 
     .header__left::after{
         content: '';
-        border: 1px solid #EAEAEA;
+        background-color: #EAEAEA;
+        width: 2px;
         border-radius: 1px;
         height: 32px; 
         position: fixed;
@@ -116,12 +122,14 @@ body{
     }
     .header__left{
         width: 175px;
+        padding-left: 8px;
     }
 
     .header__left::after{
         content: '';
         position: relative;
-        border: 1px solid #EAEAEA;
+        background-color: #EAEAEA;
+        width: 2px;
         border-radius: 1px;
         height: 32px; 
         left: 0px;
@@ -136,6 +144,7 @@ body{
         display: flex;
         width: 132px;
         margin: 0 auto;
+        align-items: center;
     }
 
     .header__call, .header__chat, .header__profile{
