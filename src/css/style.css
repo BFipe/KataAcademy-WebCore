@@ -1,11 +1,37 @@
+/* TTLakes */
+@font-face {
+    font-family: "TTLakes";
+    src: url('/src/fonts/TTLakes-Bold.ttf') format('truetype');   
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url('/src/fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url('/src/fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+/* TTLakes */
+
 body{
     margin: 0;
     padding: 0;
     background-color: #F8F8F8;
+    font-family: "TTLakes", sans-serif;
 }
 
 .container {
-    
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 32px;
 }
 
 .header {
@@ -27,13 +53,13 @@ body{
     height: 50px;
 }
 
-.header button:focus{
+button:focus{
     border-radius: 50%;
-    outline: 2px solid  #a83b5b;
+    outline: 2px solid  #431724;
 }
 
-.header button:active{
-    transform: scale(0.95);
+button:active{
+    transform: scale(0.9);
 }
 
 .button img{
@@ -68,22 +94,58 @@ body{
     justify-content: space-evenly;
     padding: 16px 0;
 }
-.header__call {
-}
-.header__chat {
-}
-.header__profile {
-}
-.header__repair {
-}
-.header__check-status {
+
+.naming{
+    display: flex;
+    margin-top: 18px;
 }
 
-@media screen and (max-width: 1120px) {
-
+.naming__title::before{
+    content: "";
+    background-color: #41F6D6;
+    width: 8px;
+    height: 40px;
+    position: fixed;
+    left: -4px;
+    border-radius: 4px;
 }
+
+.naming__title{
+    font-weight: 600;
+    font-size: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.naming__functions{
+    margin-left: auto;
+}
+
+.naming .functions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.functions__block{
+    display: flex;
+    margin-left: 32px;
+}
+
+.functions__function-name{
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* __SCREEN______________________________________________________________________________ */
 
 @media screen and (max-width: 980px) {
+    .container{
+        max-width: 720px;
+        padding: 0 16px;
+    }
+    
     .header{
         display: flex;
         justify-content: space-between;
@@ -117,13 +179,27 @@ body{
         position: fixed;
         left: 88px;
     }
+
+    .naming{
+        margin-top: 8px;
+    }
+
+    .naming .functions{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 550px) {
+    .container{
+        width: auto;
+        padding: 0 16px;
+    }
+    
     .header{
         display: flex;
         justify-content: space-between;
     }
+
     .header__left{
         width: 175px;
         padding-left: 8px;
@@ -152,6 +228,10 @@ body{
     }
 
     .header__call, .header__chat, .header__profile{
+        display: none;
+    }
+
+    .naming .functions{
         display: none;
     }
 }
