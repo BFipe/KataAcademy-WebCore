@@ -138,11 +138,42 @@ button:active{
     font-size: 20px;
 }
 
+.scroll-line{
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scroll-line__info{
+    padding: 4px 20px;
+    white-space: nowrap;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #7E7E82;
+    margin-bottom: 16px;
+}
+
+.scroll-line__info:last-child{
+    margin-right: 0;
+}
+
+.scroll-line__info:hover{
+    color: #2e2e2e;
+}
+
+.scroll-line__info:focus{
+    outline: solid 2px #B8FFEC;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+
 /* __SCREEN______________________________________________________________________________ */
 
 @media screen and (max-width: 980px) {
     .container{
-        max-width: 720px;
+        max-width: 900px;
         padding: 0 16px;
     }
     
@@ -186,6 +217,14 @@ button:active{
 
     .naming .functions{
         display: none;
+    }
+
+    .scroll-line{
+        padding: 10px;
+        flex-wrap: nowrap;
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
     }
 }
 
