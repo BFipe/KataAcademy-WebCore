@@ -1,21 +1,21 @@
 /* TTLakes */
 @font-face {
     font-family: "TTLakes";
-    src: url('/src/fonts/TTLakes-Bold.ttf') format('truetype');
+    src: url('../src/fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TTLakes";
-    src: url('/src/fonts/TTLakes-Medium.ttf') format('truetype');
+    src: url('../src/fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TTLakes";
-    src: url('/src/fonts/TTLakes-Regular.ttf') format('truetype');
+    src: url('../src/fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
@@ -203,6 +203,8 @@ body {
     background-color: #FFFFFF;
 }
 
+
+
 /* __SCREEN______________________________________________________________________________ */
 
 @media screen and (max-width: 980px) {
@@ -260,13 +262,6 @@ body {
         overflow: auto;
         white-space: nowrap;
     }
-
-    .article__image {
-        width: 45vmax;
-        height: 100%;
-    }
-
-
 }
 
 @media screen and (max-width: 550px) {
@@ -326,15 +321,12 @@ body {
         max-height: 20vh;
     }
 
-    .article__image {
-        width: 120%;
-        height: auto;
-        margin: 0 -16px;
-    }
-
     .article__text {
         overflow: hidden;
         z-index: -1;
     }
-    
+
+    .logo-image{
+        width:100vw;
+    }
 }
