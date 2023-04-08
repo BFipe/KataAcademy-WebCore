@@ -145,6 +145,7 @@ button:active{
 
 .scroll-line__info{
     padding: 4px 20px;
+    margin: 4px 0;
     white-space: nowrap;
     font-size: 20px;
     margin-right: 10px;
