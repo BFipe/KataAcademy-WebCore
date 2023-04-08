@@ -198,8 +198,9 @@ body {
 }
 
 .article__continue-reading:focus{
-    outline: solid 2px #262626;
-    border-radius: 6px;
+    outline: solid 2px #B8FFEC;
+    border-radius: 2px;
+    background-color: #FFFFFF;
 }
 
 /* __SCREEN______________________________________________________________________________ */
