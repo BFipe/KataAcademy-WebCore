@@ -1,21 +1,21 @@
 /* TTLakes */
 @font-face {
     font-family: "TTLakes";
-    src: url('../src/fonts/TTLakes-Bold.ttf') format('truetype');
+    src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TTLakes";
-    src: url('../src/fonts/TTLakes-Medium.ttf') format('truetype');
+    src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TTLakes";
-    src: url('../src/fonts/TTLakes-Regular.ttf') format('truetype');
+    src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
@@ -203,7 +203,10 @@ body {
     background-color: #FFFFFF;
 }
 
-
+.article__image{
+    width:100%;
+    height: 100%;
+}
 
 /* __SCREEN______________________________________________________________________________ */
 
@@ -245,6 +248,7 @@ body {
         height: 32px;
         position: fixed;
         left: 88px;
+
     }
 
     .naming {
@@ -262,7 +266,30 @@ body {
         overflow: auto;
         white-space: nowrap;
     }
+
+.article{
+    align-items: center;
 }
+
+    .article__content{
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+    }
+
+    .article__text {
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .article__image{
+        width: 50vw;
+        margin-left: 30px;
+        border-radius: 10px;
+    }
+}
+
+/* ________MOBILE_______________________________________________________ */
 
 @media screen and (max-width: 550px) {
     .container {
@@ -315,6 +342,7 @@ body {
     .article {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .article__text {
@@ -326,7 +354,10 @@ body {
         z-index: -1;
     }
 
-    .logo-image{
-        width:100vw;
+    .article__image{
+        width:100%;
+        height: 100%;
+        margin-left: 0;
+        border-radius: 0;
     }
 }
