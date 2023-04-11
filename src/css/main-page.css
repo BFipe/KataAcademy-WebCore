@@ -156,6 +156,7 @@ body {
 }
 
 .button-max-screen:hover{
+    cursor: pointer;
     background-color: #f0f0f0;
 }
 
@@ -189,6 +190,7 @@ body {
 }
 
 .scroll-line__info:hover {
+    cursor: pointer;
     color: #2e2e2e;
 }
 
