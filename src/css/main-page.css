@@ -106,7 +106,7 @@ body {
     background-color: #41F6D6;
     width: 8px;
     height: 40px;
-    position: fixed;
+    position: absolute;
     left: -4px;
     border-radius: 4px;
 }
@@ -139,6 +139,35 @@ body {
     font-size: 20px;
 }
 
+.button-max-screen {
+    display: flex;
+    border: none;
+    background-color: #FFFFFF00;
+    text-decoration: none;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.button-max-screen:hover{
+    background-color: #f0f0f0;
+}
+
+.button-max-screen:focus{
+    outline: solid 2px #B8FFEC;
+    background-color: #FFFFFF;
+}
+
+.button-max-screen:active{
+    transform: scale(0.98);
+}
+
+.button-max-screen__text{
+    margin-right: 10px;
+    font-family: "TTLakes";
+    font-size: 20px;
+}
+
 .scroll-line {
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +194,7 @@ body {
 
 .scroll-line__info:focus {
     outline: solid 2px #B8FFEC;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: #FFFFFF;
 }
 
@@ -174,6 +203,10 @@ body {
     display: flex;
     font-weight: 100;
     align-items: center;
+}
+
+.article__content{
+    justify-content: space-evenly;
 }
 
 .article__continue-reading {
@@ -185,22 +218,33 @@ body {
     padding: 4px;
 }
 
-.article__continue-reading span{
+.article__continue-reading::before{
+    content: "";
+    display: block;
+    background: url(../img/Buttons/ExpandText.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 3px;
+}
+
+.article__continue-reading{
     font-family: "TTLakes";
     font-weight: 400;
     font-size: 16px;
-    margin: 0 4px;
+    margin: 10px 4px;
+    padding-right: 15px;
+    border-radius: 6px;
 }
 
 .article__continue-reading:hover{
     cursor: pointer;
-    border-radius: 6px;
     background-color: #ededed;
 }
 
 .article__continue-reading:focus{
     outline: solid 2px #B8FFEC;
-    border-radius: 2px;
     background-color: #FFFFFF;
 }
 
@@ -216,7 +260,9 @@ body {
     margin: 0;
     min-width: 40vw;
     flex-shrink: 2;
+    white-space:break-spaces;
 }
+
 /* __SCREEN______________________________________________________________________________ */
 
 @media screen and (max-width: 980px) {
@@ -335,7 +381,7 @@ body {
     .header__right {
         display: flex;
         width: 132px;
-        margin: 0 auto;
+        margin-left: auto;
         align-items: center;
     }
 
@@ -357,9 +403,6 @@ body {
 
     .article__text {
         max-height: 20vh;
-    }
-
-    .article__text {
         overflow: hidden;
         z-index: -1;
     }
