@@ -145,8 +145,14 @@ body {
     background-color: #FFFFFF00;
     text-decoration: none;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 10px;
     border-radius: 10px;
+    font-family: "TTLakes";
+    font-size: 20px;
+}
+
+.button-max-screen svg{
+    margin-left: 10px;
 }
 
 .button-max-screen:hover{
@@ -160,12 +166,6 @@ body {
 
 .button-max-screen:active{
     transform: scale(0.98);
-}
-
-.button-max-screen__text{
-    margin-right: 10px;
-    font-family: "TTLakes";
-    font-size: 20px;
 }
 
 .scroll-line {
@@ -236,6 +236,7 @@ body {
     margin: 10px 4px;
     padding-right: 15px;
     border-radius: 6px;
+    align-self: self-start;
 }
 
 .article__continue-reading:hover{
@@ -330,7 +331,6 @@ body {
     .article__content{
         display: flex;
         flex-direction: column;
-        height: 210px;
     }
 
     .article__text {
@@ -402,7 +402,6 @@ body {
     }
 
     .article__text {
-        max-height: 20vh;
         overflow: hidden;
         z-index: -1;
     }
