@@ -330,7 +330,7 @@ body {
         content: "";
         position: absolute;
         background-image: linear-gradient(to left, #ffffff00 20%, #f8f8f8);
-        height: 35px;
+        height: 42px;
         width: 50px;
         left: 15px; 
     }
@@ -339,7 +339,7 @@ body {
         content: "";
         position: absolute;
         background-image: linear-gradient(to left, #F8F8F8 20%, #ffffff00);
-        height: 35px;
+        height: 42px;
         width: 60px;
         right: 10px;
     }
