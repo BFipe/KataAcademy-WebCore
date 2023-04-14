@@ -1,30 +1,111 @@
+@font-face {
+    font-family: "TTLakes";
+    src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* TTLakes */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: "TTLakes", sans-serif;
+}
+
 .sidebar {
+    background-color: #FFFFFF;
+    width: 320px;
+    height: 100vh;
+    box-shadow: -15px 0px 30px 30px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    
 }
+
+.sidebar-container{
+    box-sizing: border-box;
+    padding: 16px 24px 32px 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .sidebar-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center;
 }
-.sidebar-header__button {
+.sidebar-header__button--close {
+    margin-right: 15px;
 }
-.sidebar-header__logo {
+
+.sidebar-header__button--search {
+    margin-left: auto;
 }
+
 .sidebar-services {
+    display: flex;
+    flex-direction: column;
 }
+
 .sidebar-services__service {
+    margin-bottom: 32px;
 }
+
+.sidebar-services__service:last-child{
+    margin-bottom: 6px;
+}
+
+.sidebar-services__service--active::before{
+    content: "";
+    background-color: #41F6D6;
+    width: 8px;
+    height: 32px;
+    position: absolute;
+    left: -4px;
+    border-radius: 4px;
+}
+
 .sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 }
 .sidebar-footer__buttons {
+    
 }
 .footer-buttons {
+    display: flex;
 }
 .footer-buttons__button {
 }
+
 .sidebar-footer__email {
+    
 }
 .sidebar-footer__phone {
 }
 .sidebar-footer__languages {
 }
 .footer-languages {
+    display: flex;
 }
 .footer-languages__language {
 }
