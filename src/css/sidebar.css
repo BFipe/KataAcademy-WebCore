@@ -105,11 +105,10 @@ button{
     margin-top: auto;
 }
 .sidebar-footer__buttons {
-    
+    margin-bottom: 16px;
 }
 .footer-buttons {
     display: flex;
-    margin-bottom: 16px;
 }
 .footer-buttons__button {
     margin-right: 16px;
@@ -127,8 +126,7 @@ button{
     font-weight: bold;
     margin-bottom: 40px;
 }
-.sidebar-footer__languages {
-}
+
 .footer-languages {
     display: flex;
 }
