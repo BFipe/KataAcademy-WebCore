@@ -28,6 +28,14 @@ body {
     font-family: "TTLakes", sans-serif;
 }
 
+button{
+    font-family: "TTLakes", sans-serif;
+    border: none;
+    background-color: #FFFFFF00;
+    text-decoration: none;
+    padding: 0;
+}
+
 .sidebar {
     background-color: #FFFFFF;
     width: 320px;
@@ -66,18 +74,26 @@ body {
 }
 
 .sidebar-services__service {
+    font-weight: normal;
     margin-bottom: 32px;
+    font-size: 16px;
 }
 
 .sidebar-services__service:last-child{
     margin-bottom: 6px;
 }
 
+.sidebar-services__service--active{
+    color: #7E7E82;
+}
+
+
 .sidebar-services__service--active::before{
     content: "";
     background-color: #41F6D6;
     width: 8px;
-    height: 32px;
+    height: 22px;
+    transform: scale(1, 1.5);
     position: absolute;
     left: -4px;
     border-radius: 4px;
@@ -93,19 +109,64 @@ body {
 }
 .footer-buttons {
     display: flex;
+    margin-bottom: 16px;
 }
 .footer-buttons__button {
+    margin-right: 16px;
+}
+
+.footer-buttons__button:last-child{
+    margin-right: 0;
 }
 
 .sidebar-footer__email {
-    
+    margin-bottom: 12px;
 }
 .sidebar-footer__phone {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
 }
 .sidebar-footer__languages {
 }
 .footer-languages {
     display: flex;
 }
+
 .footer-languages__language {
+    font-size: 18px;
+    margin-right: 7px;
+}
+
+.footer-languages__language:last-child{
+    margin-left: 0;
+}
+.footer-languages__language--active{
+    color: #7E7E82;
+}
+
+.text-button{
+    text-align: start;
+}
+
+.button{
+    width: 40px;
+    height: 40px;
+}
+
+.button:focus {
+    border-radius: 50%;
+    outline: 2px solid #431724;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.button svg:hover {
+    cursor: pointer;
+}
+
+.button svg:hover rect {
+    fill: #a83b5b;
 }
