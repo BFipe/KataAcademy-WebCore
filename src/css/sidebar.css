@@ -71,11 +71,12 @@ button{
 .sidebar-services {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
 }
 
 .sidebar-services__service {
     font-weight: normal;
-    margin-bottom: 32px;
     font-size: 16px;
 }
 
@@ -99,10 +100,13 @@ button{
     border-radius: 4px;
 }
 
+/* _________FOOTER_______________ */
+
 .sidebar-footer {
     display: flex;
     flex-direction: column;
     margin-top: auto;
+    justify-content: space-between;
 }
 .sidebar-footer__buttons {
     margin-bottom: 16px;
@@ -124,7 +128,7 @@ button{
 .sidebar-footer__phone {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 .footer-languages {
