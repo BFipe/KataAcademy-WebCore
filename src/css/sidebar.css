@@ -20,6 +20,10 @@
 }
 
 /* TTLakes */
+a{
+    text-decoration: none;
+    color: black;
+}
 
 body {
     margin: 0;
@@ -60,6 +64,7 @@ button{
     margin-bottom: 30px;
     align-items: center;
 }
+
 .sidebar-header__button--close {
     margin-right: 15px;
 }
@@ -78,6 +83,21 @@ button{
 .sidebar-services__service {
     font-weight: normal;
     font-size: 16px;
+    align-self: flex-start;
+}
+
+.sidebar-services__service:hover{
+    color: #ababab;
+    cursor: pointer;
+}
+
+.sidebar-services__service:focus{
+    outline: none;
+    text-decoration: underline;
+}
+
+.sidebar-services__service:active{
+    transform: scale(0.98);
 }
 
 .sidebar-services__service:last-child{
@@ -88,6 +108,14 @@ button{
     color: #7E7E82;
 }
 
+.sidebar-services__service--active:hover{
+    color: #7E7E82;
+    cursor: default;
+}
+
+.sidebar-services__service--active:active{
+    transform: none;
+}
 
 .sidebar-services__service--active::before{
     content: "";
@@ -125,10 +153,21 @@ button{
 .sidebar-footer__email {
     margin-bottom: 12px;
 }
+
+.sidebar-footer__email:focus{
+    outline: none;
+    text-decoration: underline;
+}
+
 .sidebar-footer__phone {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 16px;
+}
+
+.sidebar-footer__phone:focus{
+    outline: none;
+    text-decoration: underline;
 }
 
 .footer-languages {
@@ -143,8 +182,32 @@ button{
 .footer-languages__language:last-child{
     margin-left: 0;
 }
+
+.footer-languages__language:hover{
+    color: #ababab;
+    cursor: pointer;
+}
+
+.footer-languages__language:focus{
+    outline: none;
+    text-decoration: underline;
+}
+
+.footer-languages__language:active{
+    transform: scale(0.9);
+}
+
 .footer-languages__language--active{
     color: #7E7E82;
+}
+
+.footer-languages__language--active:hover{
+    cursor: default;
+    color: #7E7E82;
+}
+
+.footer-languages__language--active:active{
+    transform: none;
 }
 
 .text-button{
