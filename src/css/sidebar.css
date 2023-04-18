@@ -130,10 +130,13 @@ button{
 
 /* _________FOOTER_______________ */
 
+.sidebar__footer{
+    margin-top: auto;
+}
+
 .sidebar-footer {
     display: flex;
     flex-direction: column;
-    margin-top: auto;
     justify-content: space-between;
 }
 .sidebar-footer__buttons {
