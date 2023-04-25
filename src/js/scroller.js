@@ -4,11 +4,18 @@
     if (window.innerWidth <= 768) {
       if (!init) {
         pagination.classList.remove('hided');
+
         init = true;
+        
         swiper = new Swiper(".swiper-brands", {
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+          },
           direction: "horizontal",
           slidesPerView: 1,
-          centeredSlides: true,
+          freeMode: true,
+          loop: true,
           spaceBetween: 32,
           pagination: {
             el: ".swiper-pagination",
@@ -22,5 +29,6 @@
       init = false;
     }
   }
+  
   swiperCard();
   window.addEventListener("resize", swiperCard);
