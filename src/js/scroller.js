@@ -1,0 +1,26 @@
+  var init = false;
+  var pagination = document.querySelector('.swiper-pagination');
+  function swiperCard() {
+    if (window.innerWidth <= 768) {
+      if (!init) {
+        pagination.classList.remove('hided');
+        init = true;
+        swiper = new Swiper(".swiper-brands", {
+          direction: "horizontal",
+          slidesPerView: 1,
+          centeredSlides: true,
+          spaceBetween: 32,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    } else if (init) {
+      pagination.classList.add('hided');
+      swiper.destroy();
+      init = false;
+    }
+  }
+  swiperCard();
+  window.addEventListener("resize", swiperCard);
