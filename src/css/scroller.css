@@ -72,7 +72,7 @@ body {
     display: flex;
     width: 240px;
     height: 72px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #EAEAEA;
 
     box-sizing: border-box;
@@ -88,7 +88,7 @@ body {
 
 .swiper-slide__image img {
     display: block;
-    max-height: 40px;
+    max-height: 50px;
     max-width: 130px;
     object-fit: cover;
 }
@@ -160,7 +160,7 @@ body {
         content: "";
         position: absolute;
         height: 72px;
-        width: 40px;
+        width: 30px;
         background-image: linear-gradient(to right, #f8f8f8, #F8F8F800);
         left: 0;
         top: 0;
@@ -171,7 +171,7 @@ body {
         content: "";
         position: absolute;
         height: 72px;
-        width: 40px;
+        width: 30px;
         background-image: linear-gradient(to left, #f8f8f8, #F8F8F800);
         right: 0;
         top: 0;
