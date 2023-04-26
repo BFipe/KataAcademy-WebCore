@@ -3,6 +3,7 @@
   function swiperCard() {
     if (window.innerWidth <= 768) {
       if (!init) {
+
         pagination.classList.remove('hided');
 
         init = true;
@@ -23,7 +24,9 @@
           },
         });
       }
-    } else if (init) {
+    } 
+    
+    else if (init) {
       pagination.classList.add('hided');
       swiper.destroy();
       init = false;

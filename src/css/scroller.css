@@ -79,6 +79,7 @@ body {
     padding: 0px 16px;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .swiper-slide__image{
@@ -113,7 +114,9 @@ body {
 .swiper-wrapper{  
 }
 
-.swiper-container {}
+.swiper-container {
+    padding: 0 24px;
+}
 
 
 .swiper-slide__image {}
@@ -122,6 +125,27 @@ body {
     margin: 4px 0px;
 }
 
+.swiper__show-more-button {
+    font-family: "TTLakes", sans-serif;
+    font-weight: 400;
+    margin: 16px 0;
+    border: none;
+    background-color: #FFFFFF00;
+    align-items: center;
+    display: flex;
+    padding: 4px;
+}
+
+.swiper__show-more-button::before{
+    content: "";
+    display: block;
+    background: url(../img/Buttons/ExpandText.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 3px;
+}
 
 @media screen and (max-width: 768px) {
     .swiper-brands {
@@ -154,7 +178,7 @@ body {
         z-index: 2;
     }
 
-    .swiper__info {
-        padding: 16px;
+    .swiper-container {
+        padding: 0 16px;
     }
 }
