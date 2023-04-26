@@ -8,15 +8,15 @@
         init = true;
         
         swiper = new Swiper(".swiper-brands", {
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
+          // autoplay: {
+          //   delay: 2500,
+          //   disableOnInteraction: true,
+          // },
           direction: "horizontal",
           slidesPerView: 1,
           freeMode: true,
           loop: true,
-          spaceBetween: 32,
+          spaceBetween: 16,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
