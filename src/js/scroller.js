@@ -14,9 +14,9 @@
           // },
           direction: "horizontal",
           slidesPerView: 1,
-          freeMode: true,
-          loop: true,
+          centeredSlides: true,
           spaceBetween: 16,
+          freeMode: true,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,

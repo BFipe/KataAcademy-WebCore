@@ -118,7 +118,9 @@ body {
 
 .swiper-slide__image {}
 
-.swiper-pagination {}
+.swiper-pagination {
+    margin: 4px 0px;
+}
 
 
 @media screen and (max-width: 768px) {
