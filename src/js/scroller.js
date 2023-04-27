@@ -4,7 +4,7 @@
     if (window.innerWidth <= 768) {
       if (!init) {
 
-        pagination.classList.remove('hided');
+        pagination.classList.remove('hidden');
 
         init = true;
         
@@ -26,7 +26,7 @@
     } 
     
     else if (init) {
-      pagination.classList.add('hided');
+      pagination.classList.add('hidden');
       swiper.destroy();
       init = false;
     }
