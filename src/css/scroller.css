@@ -33,9 +33,7 @@ body {
     font-family: "TTLakes", sans-serif;
 }
 
-.brand-showcase{
-    
-}
+.brand-showcase {}
 
 .swiper__header {
     background-color: #FCFCFC;
@@ -73,7 +71,7 @@ body {
     transform: scale(1);
 }
 
-.swiper-slide:hover{
+.swiper-slide:hover {
     transform: scale(1.05);
 }
 
@@ -117,7 +115,7 @@ body {
     transform: scale(1.0);
 }
 
-.swiper-slide__site-link:hover svg{
+.swiper-slide__site-link:hover svg {
     transform: scale(1.1);
 }
 
@@ -159,6 +157,26 @@ body {
     align-items: center;
     display: flex;
     padding: 4px;
+    align-self: flex-start;
+    padding-right: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 0.1s ease-out;
+}
+
+.swiper__show-more-button:active {
+    transform: scale(0.95);
+}
+
+.swiper__show-more-button:focus {
+    outline: solid 2px #B8FFEC;
+    background-color: #FFFFFF;
+}
+
+.swiper__show-more-button:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
 }
 
 .swiper__show-more-button::before {
@@ -173,7 +191,7 @@ body {
 }
 
 @media screen and (max-width: 1120px) {
-    .swiper-brands{
+    .swiper-brands {
         width: 720px;
     }
 }
@@ -224,7 +242,7 @@ body {
         gap: 0;
     }
 
-    .swiper-brands{
+    .swiper-brands {
         width: auto;
     }
 }
