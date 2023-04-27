@@ -26,7 +26,6 @@
     --swiper-theme-color: #B5B6BC;
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -34,7 +33,9 @@ body {
     font-family: "TTLakes", sans-serif;
 }
 
-.brand-showcase {}
+.brand-showcase{
+    
+}
 
 .swiper__header {
     background-color: #FCFCFC;
@@ -66,12 +67,20 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
+
+    transform-origin: top center;
+    transition: transform 0.5s;
+    transform: scale(1);
 }
 
-.swiper-slide__content{
+.swiper-slide:hover{
+    transform: scale(1.05);
+}
+
+.swiper-slide__content {
     background: #FFFFFF;
     display: flex;
-    width: 240px;
+    width: 224px;
     height: 72px;
     border-radius: 10px;
     border: 1px solid #EAEAEA;
@@ -83,7 +92,7 @@ body {
 
 }
 
-.swiper-slide__image{
+.swiper-slide__image {
     width: auto;
 }
 
@@ -94,9 +103,22 @@ body {
     object-fit: cover;
 }
 
-.swiper-slide svg{
+.swiper-slide__site-link {
+    height: 40px;
+    border: none;
+    background: none;
+    transition: all 0.33s ease-in-out;
+}
+
+.swiper-slide__site-link svg {
     min-width: 40px;
     min-height: 40px;
+    transition: all 0.33s ease-in-out;
+    transform: scale(1.0);
+}
+
+.swiper-slide__site-link:hover svg{
+    transform: scale(1.1);
 }
 
 .swiper-pagination {
@@ -110,14 +132,18 @@ body {
 
 .swiper-brands {
     display: flex;
+    flex-direction: column;
+    width: 968px;
 }
 
-.swiper-wrapper{  
+.swiper-wrapper {
     flex-wrap: wrap;
+    gap: 16px 24px;
 }
 
 .swiper-container {
     padding: 0 24px;
+    justify-content: center;
 }
 
 .swiper-pagination {
@@ -135,7 +161,7 @@ body {
     padding: 4px;
 }
 
-.swiper__show-more-button::before{
+.swiper__show-more-button::before {
     content: "";
     display: block;
     background: url(../img/Buttons/ExpandText.svg);
@@ -146,6 +172,13 @@ body {
     bottom: 3px;
 }
 
+@media screen and (max-width: 1120px) {
+    .swiper-brands{
+        width: 720px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .swiper-brands {
         display: block;
@@ -155,7 +188,11 @@ body {
         display: none;
     }
 
-    .swiper-brands::before{
+    .swiper-slide__content {
+        width: 240px;
+    }
+
+    .swiper-brands::before {
         content: "";
         position: absolute;
         height: 72px;
@@ -166,7 +203,7 @@ body {
         z-index: 2;
     }
 
-    .swiper-brands::after{
+    .swiper-brands::after {
         content: "";
         position: absolute;
         height: 72px;
@@ -181,7 +218,13 @@ body {
         padding: 0 16px;
     }
 
-    .swiper-wrapper{  
+    .swiper-wrapper {
+        justify-content: start;
         flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .swiper-brands{
+        width: auto;
     }
 }
