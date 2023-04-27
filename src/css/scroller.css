@@ -65,6 +65,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 
 .swiper-slide__content{
@@ -112,14 +113,12 @@ body {
 }
 
 .swiper-wrapper{  
+    flex-wrap: wrap;
 }
 
 .swiper-container {
     padding: 0 24px;
 }
-
-
-.swiper-slide__image {}
 
 .swiper-pagination {
     margin: 4px 0px;
@@ -180,5 +179,9 @@ body {
 
     .swiper-container {
         padding: 0 16px;
+    }
+
+    .swiper-wrapper{  
+        flex-wrap: nowrap;
     }
 }

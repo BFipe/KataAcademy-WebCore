@@ -9,10 +9,10 @@
         init = true;
         
         swiper = new Swiper(".swiper-brands", {
-          // autoplay: {
-          //   delay: 2500,
-          //   disableOnInteraction: true,
-          // },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
           direction: "horizontal",
           slidesPerView: 1,
           centeredSlides: true,
