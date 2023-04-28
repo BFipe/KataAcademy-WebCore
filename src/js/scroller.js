@@ -1,5 +1,5 @@
-  var init = false;
-  var pagination = document.querySelector('.swiper-pagination');
+  let init = false;
+  let pagination = document.querySelector('.swiper-pagination');
   function swiperCard() {
     if (window.innerWidth <= 768) {
       if (!init) {

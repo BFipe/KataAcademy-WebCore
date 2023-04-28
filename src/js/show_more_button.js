@@ -26,9 +26,9 @@ function hideContent(isButton) {
         midscreen = window.innerWidth > 768 && window.innerWidth <= 1120;
         
         if (window.innerWidth > 768 && window.innerWidth <= 1120) {
-            hideByNumber(3, logos);
+            hideByNumber(6, logos);
         } else if (window.innerWidth > 1120) {
-            hideByNumber(4, logos);
+            hideByNumber(8, logos);
         }
     } else {
         showAll(logos);

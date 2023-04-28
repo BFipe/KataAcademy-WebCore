@@ -76,7 +76,7 @@ body {
 .swiper-slide__content {
     background: #FFFFFF;
     display: flex;
-    width: 224px;
+    width: 240px;
     height: 72px;
     border-radius: 10px;
     border: 1px solid #EAEAEA;
@@ -129,12 +129,12 @@ body {
 .swiper-brands {
     display: flex;
     flex-direction: column;
-    width: 968px;
+    width: 1056px;
 }
 
 .swiper-wrapper {
     flex-wrap: wrap;
-    gap: 16px 24px;
+    gap: 16px 32px;
 }
 
 .swiper-container {
@@ -198,6 +198,14 @@ body {
 @media screen and (max-width: 1120px) {
     .swiper-brands {
         width: 720px;
+    }
+
+    .swiper-wrapper {
+        gap: 16px 24px;
+    }
+
+    .swiper-slide__content {
+        width: 224px;
     }
 }
 
