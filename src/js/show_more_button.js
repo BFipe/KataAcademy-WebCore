@@ -22,12 +22,12 @@ button.addEventListener("click", () => {
 })
 
 function hideContent(isButton) {
-    if ( (!buttonActive || isButton) && window.innerWidth > 768) {
-        midscreen = window.innerWidth > 768 && window.innerWidth <= 1120;
+    if ( (!buttonActive || isButton) && window.innerWidth > 760) {
+        midscreen = window.innerWidth > 760 && window.innerWidth <= 1110;
         
-        if (window.innerWidth > 768 && window.innerWidth <= 1120) {
+        if (window.innerWidth > 760 && window.innerWidth < 1110) {
             hideByNumber(6, logos);
-        } else if (window.innerWidth > 1120) {
+        } else if (window.innerWidth >= 1110) {
             hideByNumber(8, logos);
         }
     } else {

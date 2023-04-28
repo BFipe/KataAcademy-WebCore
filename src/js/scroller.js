@@ -1,7 +1,7 @@
   let init = false;
   let pagination = document.querySelector('.swiper-pagination');
   function swiperCard() {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 760) {
       if (!init) {
 
         pagination.classList.remove('hidden');
