@@ -1,0 +1,27 @@
+{
+  "name": "kataacademy-webcore",
+  "version": "1.0.0",
+  "description": "KataAcademy WebCore tasks",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BFipe/KataAcademy-WebCore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BFipe/KataAcademy-WebCore/issues"
+  },
+  "homepage": "https://github.com/BFipe/KataAcademy-WebCore#readme",
+  "devDependencies": {
+    "eslint": "^8.39.0"
+  },
+  "dependencies": {
+    "eslint-config-wesbos": "^3.2.3"
+  }
+}
